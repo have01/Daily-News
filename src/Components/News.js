@@ -39,7 +39,6 @@ const Newsa = ({ val }) => {
       ) : (
         <>
           <div className="container-fluid  m-0 p-0 d-flex  align-content-start  justify-content-center flex-wrap news__container ">
-            <h1 className="main_heading">Latest News</h1>
             <div className="container-fluid m-0 p-0 d-flex row align-content-start  justify-content-center flex-wrap ">
               {news?.map((val, index) => {
                 return (

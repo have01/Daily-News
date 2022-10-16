@@ -6,9 +6,20 @@ import { Link } from "react-router-dom";
 
 const NavbarItem = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="primary"
+      variant="dark"
+      style={{ minHeight: "60px" }}
+    >
       <Container>
-        <Navbar.Brand href="#home">News</Navbar.Brand>
+        <Nav.Item>
+          {" "}
+          <Link to="/" className="Links__items">
+            News
+          </Link>
+        </Nav.Item>
         <Navbar.Toggle />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav
