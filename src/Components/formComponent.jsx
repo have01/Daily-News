@@ -10,6 +10,16 @@ export const Section = styled.section`
 
   overflow-x: hidden;
 `;
+export const Form = styled.form`
+  width: 100%;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+`;
+
 export const FormGroup = styled.div`
   color: #fff;
   display: block;

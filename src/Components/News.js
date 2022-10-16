@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "../App.css";
+import "../styles/App.css";
 import NewsCard from "./NewsCard";
 
-const Newsa = ({ val }) => {
+const Newsa = () => {
   const [news, setNews] = useState();
   const [loading, setLoading] = useState(true);
   const BASE_URL =
@@ -26,7 +26,7 @@ const Newsa = ({ val }) => {
       {loading ? (
         <>
           <div
-            className="container-fluid d-flex justify-content-center align-items-center"
+            className="container-fluid d-flex justify-content-center align-items-center "
             style={{ height: "100vh" }}
           >
             <div className="text-center">
@@ -38,7 +38,7 @@ const Newsa = ({ val }) => {
         </>
       ) : (
         <>
-          <div className="container-fluid  m-0 p-0 d-flex  align-content-start  justify-content-center flex-wrap news__container ">
+          <div className="container-fluid  m-0  d-flex  align-content-start  justify-content-center flex-wrap news__container pt-10">
             <div className="container-fluid m-0 p-0 d-flex row align-content-start  justify-content-center flex-wrap ">
               {news?.map((val, index) => {
                 return (

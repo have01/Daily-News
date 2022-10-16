@@ -1,8 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import "./home.css";
+import "../styles/home.css";
 
 const Readmore = () => {
   const location = useLocation();
@@ -18,8 +16,11 @@ const Readmore = () => {
   } = location.state;
   console.log(location.state);
   return (
-    <div class="container mx-auto flex flex-column mt-10">
-      <h5>
+    <div
+      class="container mx-auto flex flex-column mt-10 news_heading read_container"
+      style={{ background: "white" }}
+    >
+      <h5 className="source_heading">
         {source.name} {publishedAt}
       </h5>
       <h1>{title}</h1>
@@ -29,9 +30,11 @@ const Readmore = () => {
         alt=""
         className="news_section"
       />
-      <h4 className="mt-3">{author}</h4>
+      <h4 className="mt-3">
+        <span style={{ color: "#8a2be2" }}>Author:</span> {author}
+      </h4>
       <p className="mt-4">{description}</p>
-      <p>{content}</p>
+      <p className="news_content"> {content}</p>
       <a href={url} target="_blank">
         Source
       </a>

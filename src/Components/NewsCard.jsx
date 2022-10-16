@@ -1,12 +1,9 @@
 import React from "react";
-import { createBrowserHistory } from "history";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import "../App.css";
+import "../styles/App.css";
 
 const NewsCard = ({ val }) => {
-  const history = createBrowserHistory();
-
   return (
     <div
       class="card m-3 p-0 hover-overlay hover-zoom hover  cursor-pointer"
