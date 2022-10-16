@@ -18,7 +18,7 @@ const NewsCard = ({ val }) => {
         <p class="card-text text-primary">Sources:{val.source.name}</p>
         <p class="card-text">{val.title}</p>
         <Card.Link style={{ textDecoration: "none" }}>
-          <Link to="/home" className="read_more_link" state={val}>
+          <Link to="/news" className="read_more_link" state={val}>
             Read More....
           </Link>
         </Card.Link>

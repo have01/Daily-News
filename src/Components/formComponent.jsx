@@ -1,12 +1,13 @@
 import styled from "styled-components";
+
 export const Section = styled.section`
   display: flex;
   width: 100vw;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 595px;
-  background-color: #e5e7eb;
+  height: 100%;
+
   overflow-x: hidden;
 `;
 export const FormGroup = styled.div`
