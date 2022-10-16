@@ -17,9 +17,7 @@ const contact = () => {
           Contact Us
         </h2>
         <p class="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-          Got a technical issue? Want to send feedback about a beta feature?{" "}
-          <br />
-          Need details about our Business plan? Let us know.
+          Will get back to you asap!
         </p>
         <FormGroup>
           <Label htmlFor="label">Your Name</Label>
