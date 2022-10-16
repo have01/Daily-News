@@ -1,0 +1,16 @@
+.news_section {
+  width: 100%;
+  height: 500px;
+}
+.news_heading {
+  background-color: #ffffff !important;
+}
+
+.news_content::first-letter {
+  font-size: 150%;
+  color: #8a2be2;
+  margin-top: 10px;
+}
+.source_heading {
+  color: #8a2be2;
+}
